@@ -1,8 +1,8 @@
 def product_seacrh(product_list, target_product):
     for product in product_list:
         if product == target_product:
-            return product
-    return None
+            return f"Product found: {product}"
+    return "Product is not available"
     
 product_list = [
     "Laptop",
