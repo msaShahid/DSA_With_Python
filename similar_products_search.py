@@ -14,3 +14,7 @@ final_result = similar_product_search(products)
 print("-- Similar Products list --")
 for pair in final_result:
     print(pair)
+
+# Nested Loops
+# Time Complexity:  O(n2)
+# Space Complexity: O(n2)
