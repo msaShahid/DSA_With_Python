@@ -13,7 +13,7 @@ final_result = similar_product_search(products)
 
 print("-- Similar Products list --")
 for pair in final_result:
-    print(pair)
+    print(f"{pair[0]} & {pair[1]}")
 
 # Nested Loops
 # Time Complexity:  O(n2)
