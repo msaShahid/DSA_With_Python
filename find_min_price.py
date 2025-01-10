@@ -4,3 +4,5 @@ lowest_price = min(products, key=lambda x: x["price"])
 
 print(f"The lowest price of a product is ${lowest_price['price']} for {lowest_price['name']}")
         
+# Time Complexity: O(n)
+# Space Complexity: O(1)
