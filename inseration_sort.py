@@ -3,10 +3,10 @@ class Item:
         self.name = name
         self.price = price
 
-    def __repr__(self):
-        return f"({self.name}, ${self.price})"
-    
 def inseration_sort(cart):
+    """
+        Sorts the cart items by price in ascending order.
+    """
     for i in range(1, len(cart)):
         current_item = cart[i]
         j = i - 1
@@ -22,5 +22,6 @@ cart.append(Item("Phone", 599))
 cart.append(Item("Tablet", 799))
 inseration_sort(cart)
 
+print("Cart Items:")
 for item in cart:
-    print(item)
+    print(f"{item.name}: ${item.price:.2f}")
