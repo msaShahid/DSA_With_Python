@@ -1,5 +1,13 @@
 from products_list import products
 
+"""
+    Sorts a list of product dictionaries by the 'price' key using the QuickSort algorithm.
+    Args:items (list of dict): A list of dictionaries where each dictionary represents a product,
+        containing at least a 'name' and 'price' key.
+    Returns: list of dict: The sorted list of product dictionaries.
+
+"""
+
 def quick_sort(items):
     if len(items) <= 1:
         return items
