@@ -27,6 +27,28 @@ def same_price_count(products):
 
 price_count = same_price_count(products)
 
-print("Products count by price:")
-for price, count in price_count.items():
-    print(f"${price:.2f}: {count} product")      
+# print("Products count by price:")
+# for price, count in price_count.items():
+#     print(f"${price:.2f}: {count} product")      
+
+""" 3. Counts the number of products in each category """
+
+def categories_count(products):
+    category_count = {}
+
+    for product in products:
+        category = product["category"]
+
+        if category in category_count:
+            category_count[category] += 1
+        else:
+            category_count[category] = 1
+
+    return category_count
+
+category_count = categories_count(products)
+print("Product count by category :")
+for category, count in category_count.items():
+    print(f"{category}: {count} product")
+
+
